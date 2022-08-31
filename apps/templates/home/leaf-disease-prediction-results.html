@@ -1,0 +1,44 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Blank Page {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <main>
+        
+        {% include 'includes/preloader.html' %}
+
+        <div class="section section-md">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 mt-5">
+                        <div class="card shadow mb-6">
+                            <div class="card-body px-5 py-5 text-center text-md-left">
+                                <div class="row align-items-center">
+
+                                    <div>
+                                        <h3 class="mb-3">Predicted Label: {{image_label}}</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+{% include 'includes/footer.html' %}
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+{% endblock javascripts %}

@@ -16,3 +16,6 @@ Flask-Minify==0.37
 flask_mysqldb
 
 python-decouple==3.6
+tensorflow
+numpy
+imageio
